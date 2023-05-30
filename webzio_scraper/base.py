@@ -33,7 +33,7 @@ class DiscussionThread:
 
 class ForumScraperBase(metaclass=ABCMeta):
 
-    def __init__(self, url):
+    def __init__(self, url: str):
         self.url = url
         self.browser = ChromeBrowser()
         self.discussion_threads = None
